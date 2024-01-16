@@ -1,0 +1,55 @@
+.todo {
+    max-width: 100%;
+    min-height: 100vh;
+    padding-top: 100px;
+    background-image: url('@/assets/image/moun1.jpg');
+    background-size: cover;
+    &-tasks {
+        padding-top: 35px;
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+    }
+    .container {
+        max-width: 700px;
+        margin: auto;
+        padding: 30px 20px;
+        color: #fff;
+        background-image: linear-gradient(to right, rgba(36, 57, 73, 0.714) 0%, rgb(81, 127, 164) 100%);
+        border-radius: 5px;
+    }
+    .add-task__button {
+        width: 80%;
+        margin: auto;
+        margin-top: 20px;
+        padding: 5px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-radius: 10px;
+        background-color: rgba(255, 255, 255, 0.181);
+        cursor: pointer;
+        transition: 0.2s;
+        &:hover {
+            transform: translateY(-2px);
+            i {
+                color: rgb(95, 182, 248);
+            }
+        }
+        &:active {
+            transform: translateY(2px);
+        }
+    }
+    .add-task {
+        i {
+            font-size: 35px;
+            transition: 0.2s;
+        }
+        &:hover {
+            i {
+                color: rgb(95, 182, 248);
+            }
+        }
+        cursor: pointer;
+    }
+}
